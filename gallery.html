@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Fiona Fung (Anthropic) — The AI-Native Software Team</title>
+<style>
+  body { margin: 0; background: #111; color: #eee; font-family: system-ui, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+  h1 { font-size: 1.4rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 1rem; }
+  .tabs button {
+    flex: 1 1 auto; padding: .7rem 1rem; background: #222; color: #ccc;
+    border: 1px solid #333; border-radius: 8px; cursor: pointer; font-size: .9rem;
+  }
+  .tabs button:hover { background: #2c2c2c; }
+  .tabs button[aria-selected="true"] { background: #8ab4f8; color: #111; border-color: #8ab4f8; }
+  img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .panel[hidden] { display: none; }
+  .src { margin-top: 2rem; font-size: .95rem; }
+  a { color: #8ab4f8; }
+</style>
+<main>
+  <h1>Fiona Fung: The AI-Native Software Team</h1>
+
+  <!-- title attr gives the native hover tooltip; one panel shown at a time -->
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="p1" title="Part 1 — Overview &amp; episode map: engineering output is exploding (~8x more code/quarter), coding is no longer the bottleneck, and AI-native teams need new operating habits. 15-point episode map.">Part 1 · Overview</button>
+    <button role="tab" aria-selected="false" aria-controls="p2" title="Part 2 — How engineering changed: the 25-year arc from terminal-era coding to AI-native; review &amp; verification skills become the scarce resource; who to hire and the new winning mindset.">Part 2 · How It Changed</button>
+    <button role="tab" aria-selected="false" aria-controls="p3" title="Part 3 — The AI-native management stack: helping small businesses adopt AI, spotting latent demand, async work with AI routines, agency + accountability, token-maxing to ROI, the 'bad vs. sad' product framework.">Part 3 · Management</button>
+    <button role="tab" aria-selected="false" aria-controls="p4" title="Part 4 — People, skills &amp; roles: why managers start as ICs, preventing skill atrophy, managing context switching across ~20 AI agents, how PM and data science roles transform, dogfooding your own product.">Part 4 · People &amp; Roles</button>
+    <button role="tab" aria-selected="false" aria-controls="p5" title="Part 5 — Open questions &amp; the road ahead: verifying AI output at scale, the future of engineering jobs, what education should emphasize, 6-month roadmaps to JIT monthly planning, lightning-round takeaways.">Part 5 · Road Ahead</button>
+  </div>
+
+  <div class="panel" id="p1"><img src="ChatGPT Image Jun 21, 2026, 03_22_07 PM (1).png" alt="Part 1 — Overview and episode map"></div>
+  <div class="panel" id="p2" hidden><img src="ChatGPT Image Jun 21, 2026, 03_22_07 PM (2).png" alt="Part 2 — How engineering changed"></div>
+  <div class="panel" id="p3" hidden><img src="ChatGPT Image Jun 21, 2026, 03_22_07 PM (3).png" alt="Part 3 — The AI-native management stack"></div>
+  <div class="panel" id="p4" hidden><img src="ChatGPT Image Jun 21, 2026, 03_22_08 PM (4).png" alt="Part 4 — People, skills, and role change"></div>
+  <div class="panel" id="p5" hidden><img src="ChatGPT Image Jun 21, 2026, 03_22_08 PM (5).png" alt="Part 5 — Open questions and the road ahead"></div>
+
+  <p class="src">Source:
+    <a href="https://www.youtube.com/watch?v=Ybrl4FYM57c&t=883s" target="_blank" rel="noopener">
+      Building the most AI-pilled engineering team in the world | Fiona Fung (Anthropic)
+    </a>
+  </p>
+</main>
+
+<script>
+  const tabs = document.querySelectorAll('[role="tab"]');
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => {
+      t.setAttribute('aria-selected', t === tab);
+      document.getElementById(t.getAttribute('aria-controls')).hidden = t !== tab;
+    });
+  }));
+</script>
