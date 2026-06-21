@@ -1,6 +1,8 @@
 # The AI-Native Software Team
 
-A 5-part visual summary of **Fiona Fung (Anthropic)** on how engineering, management, and product work are changing in 2026 — presented as a tabbed gallery (`gallery.html`) with hover summaries for each poster.
+A 5-part visual summary of **Fiona Fung (Anthropic)** on how engineering, management, and product work are changing in 2026 — presented as a tabbed gallery with hover summaries for each poster.
+
+🔗 **Live page: https://az9713.github.io/most-ai-pilled-team/**
 
 ## Source & Attribution
 
@@ -13,9 +15,9 @@ This repo is an unofficial, fan-made visual summary. Please watch the full episo
 
 ## Contents
 
-- `gallery.html` — tabbed viewer; hover a tab for that part's summary
+- `index.html` — tabbed viewer; hover a tab for that part's summary
 - `ChatGPT Image ... (1–5).png` — the five poster pages
 
 ## Usage
 
-Open `gallery.html` in any browser.
+Visit the [live page](https://az9713.github.io/most-ai-pilled-team/), or open `index.html` in any browser.
