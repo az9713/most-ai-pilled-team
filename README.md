@@ -16,7 +16,7 @@ This repo is an unofficial, fan-made visual summary. Please watch the full episo
 ## Contents
 
 - `index.html` — tabbed viewer; hover a tab for that part's summary
-- `ChatGPT Image ... (1–5).png` — the five poster pages
+- `1.png`–`5.png` — the five poster pages
 
 ## Usage
 
